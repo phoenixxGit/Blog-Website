@@ -10,9 +10,6 @@ if(isset($_GET['page'])){
 $post_per_page=5;
 $result=($page-1)*$post_per_page;
 
-// $result = 0
-// $result = 5;
-// $result = 10
 
 ?>
 <!DOCTYPE html>
@@ -45,7 +42,7 @@ $result=($page-1)*$post_per_page;
 <a href="post.php?id=<?=$post['id']?>" style="text-decoration:none;color:black">
             <div class="row g-0">
               <div class="col-md-5" style="background-image: url('images/<?=getPostThumb($db,$post['id'])?>');background-size: cover">
-                <!-- <img src="https://images.moneycontrol.com/static-mcnews/2020/04/stock-in-the-news-770x433.jpg" alt="..."> -->
+               
               </div> 
               <div class="col-md-7">
                 <div class="card-body">
