@@ -1,7 +1,6 @@
 <?php
 require('db.php');
 if(isset($_POST['addcomment'])){
-    // print_r($_POST);
 $name=mysqli_real_escape_string($db,$_POST['name']);
 $comment=mysqli_real_escape_string($db,$_POST['comment']);
 $post_id=$_POST['post_id'];
