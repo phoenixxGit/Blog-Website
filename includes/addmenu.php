@@ -1,7 +1,7 @@
 <?php
 require 'db.php';
 if(isset($_POST['addmenu'])){
-    // print_r($_POST);
+   
     $menu_name=mysqli_real_escape_string($db,$_POST['menu-name']);
     $menu_link=mysqli_real_escape_string($db,$_POST['menu-link']);
 
@@ -14,7 +14,7 @@ header('location:../admin/index.php?managemenu');
 
 
 if(isset($_POST['addsubmenu'])){
-    // print_r($_POST);
+    
     $menu_name=mysqli_real_escape_string($db,$_POST['submenu-name']);
     $parent_id=mysqli_real_escape_string($db,$_POST['parent-id']);
 
